@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <header><h1>Etch-a-Sketch</h1></header>
+    <div class="main-container">
+        <div class="control-panel">
+            <h3>Control Panel</h3>
+            <div class="panel-items">
+                <label for="num-squares">Number of Squares:</label>
+                <input type="number" id="num-squares" name="num-squares" min="1" max="100">
+                <button id="grid-btn">Generate Grid</button>
+            </div>
+             <br>
+            <div class="panel items">
+                <label for="color-picker">Mono-color Mode</label>
+                <input type="color" id="color-picker" value="#000000">
+            </div>
+            <br>
+            <div class="panel-items"><button id="rainbow-btn">Rainbow Mode</button></div>
+            <br>
+            <div class="panel-items"><button id="eraser-btn">Eraser</button></div>
+            <br>
+            <div class="panel-items"><button id="clear-btn">Clear</button></div>
+        </div>
+        <br>
+        <div id="grid-container"></div>      
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
